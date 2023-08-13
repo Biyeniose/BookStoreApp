@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="book_store.CustomerStartScreenController">
+   <children>
+      <Label fx:id="label" alignment="CENTER" layoutX="11.0" layoutY="14.0" prefHeight="37.0" prefWidth="629.0" text="Hello Customer">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="20.0" layoutY="58.0" prefHeight="251.0" prefWidth="611.0">
+        <columns>
+          <TableColumn fx:id="bookName" prefWidth="319.0" text="BookName" />
+          <TableColumn fx:id="price" prefWidth="179.0" text="Price" />
+            <TableColumn fx:id="select" prefWidth="111.0" text="Select" />
+        </columns>
+      </TableView>
+      <Button fx:id="logout" layoutX="20.0" layoutY="345.0" mnemonicParsing="false" onAction="#logoutClick" prefHeight="37.0" prefWidth="97.0" text="Logout">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="redeem" layoutX="208.0" layoutY="345.0" mnemonicParsing="false" onAction="#redeemClick" prefHeight="37.0" prefWidth="222.0" text="REDEEM POINTS and Buy">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="buy" layoutX="508.0" layoutY="345.0" mnemonicParsing="false" onAction="#buyClick" prefHeight="37.0" prefWidth="97.0" text="Buy">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
